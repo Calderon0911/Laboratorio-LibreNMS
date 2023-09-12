@@ -40,6 +40,8 @@ sudo apt install openjdk-11-jdk
 wget -O - https://debian.opennms.org/OPENNMS-GPG-KEY | sudo apt-key add -
 sudo apt install software-properties-common
 sudo add-apt-repository "deb [arch=amd64] https://debian.opennms.org stable main"
+sudo apt update
+sudo apt install opennms
 ```
 
 ## 6 Actualizar e instalar OpenNMS:
