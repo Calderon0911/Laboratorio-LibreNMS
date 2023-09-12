@@ -6,6 +6,7 @@ Laboratorio de SNMPv3 con OpenNMS
 ```bash
 sudo apt update
 sudo apt install snmpd
+sudo apt install snmp
 ```
 
 ## 2  Configurar SNMPv3 en el archivo snmpd.conf
