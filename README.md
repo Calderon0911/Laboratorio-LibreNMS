@@ -31,22 +31,13 @@ sudo systemctl restart snmpd
 sudo systemctl status snmpd
 ```
 
-## 4 Ahora procedemos a instalar OpenNMS
-
+## 4 Ahora procedemos a instalar LibreNMS
 ```bash
-sudo apt install openjdk-11-jdk
-```
-
-## 5 Correr los siguientes comandos para descargar los repositorios de OpenNMS
-
-```bash
-wget -O - https://debian.opennms.org/OPENNMS-GPG-KEY | sudo apt-key add -
-sudo apt install software-properties-common
-sudo add-apt-repository "deb [arch=amd64] https://debian.opennms.org stable main"
 sudo apt update
-sudo apt install opennms
+sudo apt install software-properties-common
+sudo add-apt-repository universe
+sudo apt update
+sudo apt install -y acl curl composer fping git graphviz imagemagick mariadb-client mariadb-server mtr-tiny nginx-full nmap php7.4-cli php7.4-curl php7.4-fpm php7.4-gd php7.4-json php7.4-mbstring php7.4-mysql php7.4-snmp php7.4-xml php7.4-zip snmp snmpd whois python3-pymysql python3-dotenv python3-redis python3-setuptools
 ```
 
-## 6 Actualizar e instalar OpenNMS:
 
-```bash
