@@ -31,7 +31,7 @@ sudo systemctl restart snmpd
 sudo systemctl status snmpd
 ```
 
-## 4 Ahora procedemos a instalar LibreNMS
+## 4 Ahora procedemos a instalar LibreNMS y primero instalaremos las dependencias
 ```bash
 sudo apt update
 sudo apt install software-properties-common
