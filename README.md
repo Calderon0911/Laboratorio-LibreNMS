@@ -6,6 +6,8 @@ Laboratorio de SNMPv3 con OpenNMS
 ```bash
 sudo apt update
 sudo apt install snmpd
+```
+```bash
 sudo apt install snmp
 ```
 
