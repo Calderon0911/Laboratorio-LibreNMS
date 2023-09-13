@@ -213,9 +213,10 @@ exit
 cp /opt/librenms/misc/librenms.service /etc/systemd/system/librenms.service && systemctl enable --now librenms.service
 ```
 
-## Esperamos unos momentos mientras el servidor active lo que hemos agregado y volvemos a chequear.
+Esperamos unos momentos mientras el servidor active lo que hemos agregado y volvemos a chequear.
 
 ## 15 Agregamos un dispositivo para analizarlo con libreNMS. Todo dentro del WEB Browser. 
 
+FIN
 
 
