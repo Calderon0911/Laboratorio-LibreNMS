@@ -205,7 +205,7 @@ Seguimos los pasos para finalizar la configuracion.
 ## 14 Por ultimo, en nuestro server habilitamos Dispatcher Service para corregir el error que nos aparece.
 
 ```bash
-su - liberns
+su - librenms
 pip3 install -r requirements.txt
 exit
 ```
