@@ -215,7 +215,29 @@ cp /opt/librenms/misc/librenms.service /etc/systemd/system/librenms.service && s
 
 Esperamos unos momentos mientras el servidor active lo que hemos agregado y volvemos a chequear.
 
-## 15 Agregamos un dispositivo para analizarlo con libreNMS. Todo dentro del WEB Browser. 
+## 15 Configuramos nuestra maquina ubuntu para transmitir snmp a nuestro servidor.
+
+```bash
+sudo apt-get install snmpd snmp
+```
+```bash
+sudo nano /etc/snmp/snmpd.conf
+```
+
+Editamos las lineas siguientes.
+
+```bash
+agenaddress udp:161
+view   all   included   .1 80
+rommunity public
+```
+```bash
+sudo ufw allow 161/udp
+sudo service snmpd restart
+```
+
+
+## 16 Agregamos un dispositivo para analizarlo con libreNMS. Todo dentro del WEB Browser. 
 
 FIN
 
